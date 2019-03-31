@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package catalog;
+
+import "product.proto";
+
+message User {
+    int32 id = 1;
+    string name = 2;
+    string username = 3;
+    repeated Product products = 4;
+}
+
+service UserService {
+    rpc AddItem (AddItemRequest) returns (AddItemResponse) {}
+}
+
+message AddItemRequest {
+    Product product = 1;
+    User user = 2;
+}
+
+message AddItemResponse {
+    string message = 1;
+}
