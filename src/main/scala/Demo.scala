@@ -9,7 +9,7 @@ object Demo extends App {
 
   val ipad = Product(0, "Ipad", "Apple Ipad 32 Gb")
   val mac = Product(0, "Macbook Pro", "Of course")
-  val pixel = Product(0, "Google Pixel", "Better than the shitty iPhone")
+  val pixel = Product(0, "Google Pixel", "Better than the iPhone")
 
   val products = Vector(ipad, mac, pixel)
 
@@ -17,13 +17,13 @@ object Demo extends App {
 
   val curi = User(0, "Nicolás", "Curi", products)
 
-  val service = new CurisService()
+  val service = new MockService()
 
   val catalogService = new ProductCatalogService(catalog)
 
 }
 
-class CurisService extends UserService {
+class MockService extends UserService {
   override def addItem(request: AddItemRequest): Future[AddItemResponse] = {
     request.user map { user: User =>
       request.product map { product: Product =>
