@@ -1,6 +1,8 @@
 import catalog.user.User
 import models.MongoUser
+import org.mongodb.scala.Completed
 import org.mongodb.scala.bson.collection.immutable.Document
+
 import scala.concurrent.Future
 
 object UserStorageService extends StorageService("user") {
@@ -11,4 +13,7 @@ object UserStorageService extends StorageService("user") {
     .toFuture
     .map(MongoUser from)
 
+  def insert(user: User): Future[Completed] = collection
+    .insertOne(MongoUser from user)
+    .toFuture
 }

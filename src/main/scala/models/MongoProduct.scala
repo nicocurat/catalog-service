@@ -9,4 +9,6 @@ object MongoProduct extends MongoModel[Product] {
     case (acc, ("name", value)) => acc.copy(name = value.asString.getValue)
     case (acc, ("description", value)) => acc.copy(description = value.asString.getValue)
   }
+
+  override def from(t: Product): Document = Document("_id" -> t.id, "name" -> t.name, "description" -> t.description)
 }
