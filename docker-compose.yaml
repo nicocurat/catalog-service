@@ -13,5 +13,5 @@ services:
     container_name: catalog_service
     depends_on:
       - mongo_database
-    -ports:
+    ports:
        - 50000:50000
