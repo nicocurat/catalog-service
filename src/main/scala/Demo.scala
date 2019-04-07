@@ -5,7 +5,7 @@ import catalog.user.UserServiceGrpc.UserService
 
 import scala.concurrent.Future
 
-object Demo extends App {
+object Demo {
 
   val ipad = Product(0, "Ipad", "Apple Ipad 32 Gb")
   val mac = Product(0, "Macbook Pro", "Of course")

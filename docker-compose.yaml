@@ -10,7 +10,6 @@ services:
     restart: always
   catalog_service:
     build: .
-    container_name: catalog_service
     depends_on:
       - mongo_database
     ports:
