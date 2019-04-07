@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mongo_database:
+    image: mongo:3
+    container_name: mongo_database
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db/mongo/catalog_service/data:/data/db
+    restart: always
+  catalog_service:
+    build: .
+    container_name: catalog_service
+    depends_on:
+      - mongo_database
+    -ports:
+       - 50000:50000
