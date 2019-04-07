@@ -12,14 +12,21 @@ message User {
 }
 
 service UserService {
-    rpc AddItem (AddItemRequest) returns (AddItemResponse) {}
+    rpc AddItem (AddItemRequest) returns (UserId) {}
+    rpc AddUser (User) returns (UserId) {}
+    rpc GetUserById (UserId) returns (User) {}
+    rpc GetAllUsers (None) returns (GetAllUsersResponse) {}
 }
 
 message AddItemRequest {
-    Product product = 1;
-    User user = 2;
+    int32 product = 1;
+    int32 user = 2;
 }
 
-message AddItemResponse {
-    string message = 1;
+message GetAllUsersResponse {
+    repeated User users = 1;
+}
+
+message UserId {
+    int32 id = 1;
 }
