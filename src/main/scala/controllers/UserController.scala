@@ -1,10 +1,11 @@
 import catalog.product.None
 import catalog.user.{AddItemRequest, GetAllUsersResponse, User, UserId}
 import catalog.user.UserServiceGrpc.UserService
-
+import controllers.ControllerExecutionContext
 import scala.concurrent.Future
 
-object UserController extends UserService {
+object UserController extends ControllerExecutionContext with UserService {
+
   override def addItem(request: AddItemRequest): Future[UserId] = ???
 
   override def addUser(request: User): Future[UserId] = UserStorageService insert request map(user => UserId(user id))
