@@ -14,3 +14,6 @@ services:
       - mongo_database
     ports:
        - 50000:50000
+
+volumes:
+  ./db/mongo/catalog_service/data:
