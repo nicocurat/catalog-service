@@ -1,11 +1,28 @@
-import catalog.user.User
+import catalog.user.{AddItemRequest, User}
+import com.mongodb.client.model.ReturnDocument
 import models.MongoUser
-import org.mongodb.scala.Completed
+import org.mongodb.scala.{Completed, Observer}
 import org.mongodb.scala.bson.collection.immutable.Document
+import org.mongodb.scala.model.{Filters, FindOneAndUpdateOptions, Updates}
+import org.mongodb.scala.result.UpdateResult
 
 import scala.concurrent.Future
 
 object UserStorageService extends StorageService("user") {
+
+
+
+  def insertItem(request: AddItemRequest): Future[User] = {
+    var options: FindOneAndUpdateOptions = new FindOneAndUpdateOptions()
+    options.returnDocument(ReturnDocument.AFTER)
+    collection.findOneAndUpdate(Filters.equal("id", request.user),
+      Updates.addToSet("products", request.product), options).subscribe((doc: Document) =>
+      println(doc)
+
+    )
+    Future.successful(null)
+  }
+
 
   def getUserById(id: Int): Future[User] = collection
     .find(Document("_id" -> id))

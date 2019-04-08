@@ -1,7 +1,7 @@
 import java.util.concurrent.Executors
 
 import catalog.product.Product
-import catalog.user.User
+import catalog.user.{AddItemRequest, User}
 
 import scala.concurrent.ExecutionContext
 
