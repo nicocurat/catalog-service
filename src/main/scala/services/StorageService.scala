@@ -1,4 +1,6 @@
-import org.mongodb.scala.{MongoClient, MongoDatabase}
+package services
+
+import org.mongodb.scala.{Document, MongoClient, MongoCollection, MongoDatabase}
 
 import scala.concurrent.ExecutionContext
 
@@ -8,5 +10,5 @@ abstract class StorageService(private val collectionName: String) {
     private lazy val collectionObject = database.getCollection(collectionName)
     protected implicit val exec: ExecutionContext = scala.concurrent.ExecutionContext.Implicits.global
 
-    final protected def collection = collectionObject
+    final protected def collection: MongoCollection[Document] = collectionObject
 }

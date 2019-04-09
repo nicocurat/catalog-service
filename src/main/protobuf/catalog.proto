@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-package catalog;
-
 message Product {
     int32 id = 1;
     string name = 2;
@@ -18,6 +16,7 @@ service CatalogService {
     rpc GetProduct (ProductIdRequest) returns (Product) {}
     rpc GetProductsFromCatalog (CatalogIdRequest) returns (ProductsList) {}
     rpc GetAllProducts (None) returns (ProductsList) {}
+    rpc getData (ProductIdsRequest) returns (ProductsList) {}
 }
 
 message None {}
@@ -32,4 +31,8 @@ message ProductIdRequest {
 
 message CatalogIdRequest {
     int32 catalogId = 1;
+}
+
+message ProductIdsRequest {
+    repeated int32 productId = 1;
 }

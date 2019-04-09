@@ -1,5 +1,5 @@
 package models
-import catalog.product.Product
+import catalog.Product
 import org.mongodb.scala.bson.collection.immutable.Document
 
 object MongoProduct extends MongoModel[Product] {

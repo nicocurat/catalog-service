@@ -1,7 +1,8 @@
 import java.util.concurrent.Executors
 
-import catalog.product.Product
-import catalog.user.{AddItemRequest, User}
+import catalog.Product
+import services.{ProductStorageService, UserStorageService}
+import user.User
 
 import scala.concurrent.ExecutionContext
 
@@ -17,17 +18,23 @@ object Main extends App {
     last <- UserStorageService getUserById (user id)
   } yield println(third)
 
-//  val before1 = System.currentTimeMillis()
-//  UserStorageService.getUserById(0).map(result => {
-//    println(s"Fetched user and products in ${System.currentTimeMillis() - before1}")
-//    println(s"Result $result")
-//  })
-//
-//  val before2 = System.currentTimeMillis()
-//  ProductStorageService.getProductById(0).map(result => {
-//    println(s"Fetched products in ${System.currentTimeMillis() - before2}")
-//    println(s"Result $result")
-//  })
+  val before1 = System.currentTimeMillis()
+  UserStorageService.getUserById(0).map(result => {
+    println(s"Fetched user and products in ${System.currentTimeMillis() - before1}")
+    println(s"Result $result")
+  })
+
+  val before2 = System.currentTimeMillis()
+  ProductStorageService.getProductById(0).map(result => {
+    println(s"Fetched products in ${System.currentTimeMillis() - before2}")
+    println(s"Result $result")
+  })
+
+  val getData = System.currentTimeMillis()
+  UserStorageService.getProducts(0).map(result => {
+    println(s"Fetched products in ${System.currentTimeMillis() - before2}")
+    println(s"Result $result")
+  })
 
   println("Enter to exit")
   System.in.read

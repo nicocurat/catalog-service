@@ -1,8 +1,12 @@
-import catalog.product.None
-import catalog.user.{AddItemRequest, GetAllUsersResponse, User, UserId}
-import catalog.user.UserServiceGrpc.UserService
-import controllers.ControllerExecutionContext
+package controllers
+
+import catalog.{None, ProductsList}
+import services.UserStorageService
+import user.{AddItemRequest, GetAllUsersResponse, User, UserId}
+import user.UserServiceGrpc.UserService
+
 import scala.concurrent.Future
+
 
 object UserController extends ControllerExecutionContext with UserService {
 
@@ -14,4 +18,6 @@ object UserController extends ControllerExecutionContext with UserService {
   override def getUserById(request: UserId): Future[User] = UserStorageService getUserById(request id)
 
   override def getAllUsers(request: None): Future[GetAllUsersResponse] = UserStorageService.getAll.map(users => GetAllUsersResponse(users))
+
+  override def getProducts(request: UserId): Future[ProductsList] = UserStorageService getProducts (request id) map(products => ProductsList(products))
 }

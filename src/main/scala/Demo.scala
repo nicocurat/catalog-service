@@ -1,7 +1,8 @@
-import catalog.product.CatalogServiceGrpc.CatalogService
-import catalog.product._
-import catalog.user.{AddItemRequest, GetAllUsersResponse, User, UserId}
-import catalog.user.UserServiceGrpc.UserService
+
+import catalog.CatalogServiceGrpc.CatalogService
+import catalog.{Catalog, CatalogIdRequest, None, Product, ProductIdRequest, ProductIdsRequest, ProductsList}
+import user.{AddItemRequest, GetAllUsersResponse, User, UserId}
+import user.UserServiceGrpc.UserService
 
 import scala.collection.immutable
 import scala.concurrent.Future
@@ -32,6 +33,8 @@ class MockService extends UserService {
   override def getAllUsers(request: None): Future[GetAllUsersResponse] = ???
 
   override def addItem(request: AddItemRequest): Future[UserId] = ???
+
+  override def getProducts(request: UserId): Future[ProductsList] = ???
 }
 
 class ProductCatalogService(catalog: Catalog) extends CatalogService {
@@ -47,4 +50,7 @@ class ProductCatalogService(catalog: Catalog) extends CatalogService {
   }
 
   override def getAllProducts(request: None): Future[ProductsList] = Future.successful(ProductsList(catalog.products))
+
+  //TODO
+  override def getData(request: ProductIdsRequest): Future[ProductsList] = ???
 }
