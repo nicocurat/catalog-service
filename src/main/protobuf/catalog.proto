@@ -16,7 +16,8 @@ service CatalogService {
     rpc GetProduct (ProductIdRequest) returns (Product) {}
     rpc GetProductsFromCatalog (CatalogIdRequest) returns (ProductsList) {}
     rpc GetAllProducts (None) returns (ProductsList) {}
-    rpc getData (ProductIdsRequest) returns (ProductsList) {}
+    rpc GetData (ProductIdsRequest) returns (ProductsList) {}
+    rpc GetPing(Ping) returns (Pong) {}
 }
 
 message None {}
@@ -35,4 +36,12 @@ message CatalogIdRequest {
 
 message ProductIdsRequest {
     repeated int32 productId = 1;
+}
+
+message Ping {
+    string message = 1;
+}
+
+message Pong {
+    string message = 1;
 }

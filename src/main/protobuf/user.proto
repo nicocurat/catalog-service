@@ -15,6 +15,7 @@ service UserService {
     rpc GetUserById (UserId) returns (User) {}
     rpc GetAllUsers (None) returns (GetAllUsersResponse) {}
     rpc GetProducts(UserId) returns (ProductsList) {}
+    rpc GetPing(Ping) returns (Pong) {}
 }
 
 message AddItemRequest {
@@ -28,6 +29,14 @@ message GetAllUsersResponse {
 
 message UserId {
     int32 id = 1;
+}
+
+message Ping {
+    string message = 1;
+}
+
+message Pong {
+    string message = 1;
 }
 
 
