@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "catalog.proto";
+import "product.proto";
 
 message User {
     int32 id = 1;
@@ -10,12 +10,14 @@ message User {
 }
 
 service UserService {
-    rpc AddItem (AddItemRequest) returns (UserId) {}
+    //TODO could add a status for inserting
+    rpc AddItem (AddItemRequest) returns (User) {}
     rpc AddUser (User) returns (UserId) {}
     rpc GetUserById (UserId) returns (User) {}
     rpc GetAllUsers (None) returns (GetAllUsersResponse) {}
-    rpc GetProducts(UserId) returns (ProductsList) {}
-    rpc GetPing(Ping) returns (Pong) {}
+    rpc GetWishList (UserId) returns (ProductIds) {}
+    rpc GetWishListWithDescription (UserId) returns (ProductsList) {}
+    rpc GetPing (Ping) returns (Pong) {}
 }
 
 message AddItemRequest {
@@ -29,14 +31,6 @@ message GetAllUsersResponse {
 
 message UserId {
     int32 id = 1;
-}
-
-message Ping {
-    string message = 1;
-}
-
-message Pong {
-    string message = 1;
 }
 
 

@@ -1,22 +1,22 @@
 package controllers
 
-import catalog.CatalogServiceGrpc.CatalogService
-import catalog.{CatalogIdRequest, None, ProductIdRequest, ProductIdsRequest, ProductsList}
+import product.ProductServiceGrpc.ProductService
+import product.Status.Ok
+import product.{AddProductResponse, None, Ping, Pong, Product, ProductIdRequest, ProductIds, ProductsList}
 import services.ProductStorageService
+
 import scala.concurrent.Future
 
-object ProductController extends ControllerExecutionContext with CatalogService{
-
-//  override def getProduct(request: ProductIdRequest): Future[Product] = ProductStorageService getProductById request.productId
+class ProductController extends ControllerExecutionContext with ProductService {
 
 
-//  override def getAllProducts: Future[ProductsList] =
-  override def getProduct(request: ProductIdRequest): Future[catalog.Product] = ProductStorageService getProductById  (request productId)
+  override def getProduct(request: ProductIdRequest): Future[Product] = ProductStorageService getProductById  (request productId)
 
   override def getAllProducts(request: None): Future[ProductsList] = (ProductStorageService getAll) map(ProductsList(_))
 
-  override def getData(request: ProductIdsRequest): Future[ProductsList] = (ProductStorageService getData request.productId) map(ProductsList(_))
+  override def getProducts(request: ProductIds): Future[ProductsList] = (ProductStorageService getData request.productIds) map(ProductsList(_))
 
-  override def getProductsFromCatalog(request: CatalogIdRequest): Future[ProductsList] = ???
-//    ProductStorageService getProductsFromCatalog (request catalogId) map(ProductsList(_))
+  override def getPing(request: Ping): Future[Pong] = Future.successful(Pong(System.currentTimeMillis.toString))
+
+  override def addProduct(request: Product): Future[AddProductResponse] = ProductStorageService.insert(request).map(_ => AddProductResponse(Ok))
 }

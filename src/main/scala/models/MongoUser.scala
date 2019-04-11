@@ -1,7 +1,8 @@
 package models
+
 import org.mongodb.scala.bson.collection.immutable.Document
 import user.User
-import catalog.Product
+import product.Product
 
 object MongoUser extends MongoModel[User] {
 

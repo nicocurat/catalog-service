@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+message Product {
+    int32 id = 1;
+    string name = 2;
+    string description = 3;
+    double price = 4;
+}
+
+
+
+service ProductService {
+    rpc GetProduct (ProductIdRequest) returns (Product) {}
+    rpc GetAllProducts (None) returns (ProductsList) {}
+    rpc GetProducts (ProductIds) returns (ProductsList) {}
+    rpc GetPing (Ping) returns (Pong) {}
+    rpc AddProduct(Product) returns (AddProductResponse) {}
+}
+
+message None {}
+
+message ProductsList {
+    repeated Product products = 1;
+}
+
+message ProductIdRequest {
+    int32 productId = 1;
+}
+
+message ProductIds {
+    repeated int32 productIds = 1;
+}
+
+message Ping {
+}
+
+message Pong {
+    string message = 1;
+}
+
+message AddProductResponse {
+    Status status  = 1;
+}
+enum Status {
+    Ok = 0;
+    Failed = 1;
+}

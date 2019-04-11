@@ -1,11 +1,19 @@
 import java.util.concurrent.Executors
 
-import catalog.Product
+import product.Product
 import services.{ProductStorageService, UserStorageService}
 import user.User
 
 import scala.concurrent.ExecutionContext
 
+//import java.util.concurrent.Executors
+//
+//import catalog.Product
+//import services.{ProductStorageService, UserStorageService}
+//import user.User
+//
+//import scala.concurrent.ExecutionContext
+//
 object Main extends App {
 
   implicit val exec: ExecutionContext = ExecutionContext.fromExecutor(Executors.newFixedThreadPool(16))
