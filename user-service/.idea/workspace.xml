@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="41c87310-fb59-4c5d-a3f6-a9afde816287" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/sbt__org_scala_lang_scala_library_2_12_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules/catalog-service-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules/catalog-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/mongoSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/play2_project_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/scala_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/WiredTiger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/WiredTiger.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/WiredTiger.turtle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/WiredTiger.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/WiredTigerLAS.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/_mdb_catalog.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/diagnostic.data/metrics.interim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/journal/WiredTigerPreplog.0000000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/journal/WiredTigerPreplog.0000000002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/mongod.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/sizeStorer.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/mongo/catalog_service/data/storage.bson" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__aopalliance_aopalliance_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__ch_qos_logback_logback_classic_1_2_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__ch_qos_logback_logback_core_1_2_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_codeborne_phantomjsdriver_1_4_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_annotations_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_core_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_databind_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_api_grpc_proto_google_common_protos_1_12_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_code_findbugs_jsr305_3_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_code_gson_gson_2_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_errorprone_error_prone_annotations_2_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_guava_failureaccess_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_guava_guava_25_1_android_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_guava_guava_27_0_jre_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_inject_extensions_guice_assistedinject_4_2_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_inject_guice_4_2_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_j2objc_j2objc_annotations_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_protobuf_protobuf_java_3_6_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_lihaoyi_fastparse_2_12_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_lihaoyi_fastparse_utils_2_12_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_lihaoyi_sourcecode_2_12_0_1_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_novocode_junit_interface_0_11_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_squareup_okhttp3_okhttp_3_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_squareup_okio_okio_1_14_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_thesamet_scalapb_lenses_2_12_0_8_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_thesamet_scalapb_scalapb_runtime_2_12_0_8_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_thesamet_scalapb_scalapb_runtime_grpc_2_12_0_8_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_12_2_5_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_http_core_2_12_10_1_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_parsing_2_12_10_1_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_12_2_5_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_slf4j_2_12_2_5_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_12_2_5_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_netty_netty_reactive_streams_2_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_netty_netty_reactive_streams_http_2_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_build_link_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_cachecontrol_2_12_1_1_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_ahc_ws_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_ahc_ws_standalone_2_12_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_akka_http_server_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_exceptions_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_functional_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_guice_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_json_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_netty_server_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_server_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_streams_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_test_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_ws_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_ws_standalone_2_12_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_ws_standalone_json_2_12_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_ws_standalone_xml_2_12_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_shaded_asynchttpclient_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_shaded_oauth_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_twirl_api_2_12_1_4_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_12_0_3_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_codec_commons_codec_1_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_io_commons_io_2_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_logging_commons_logging_1_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__commons_net_commons_net_3_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_grpc_grpc_context_1_18_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_grpc_grpc_core_1_18_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_grpc_grpc_netty_1_18_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_grpc_grpc_protobuf_1_18_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_grpc_grpc_protobuf_lite_1_18_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_grpc_grpc_stub_1_18_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_jsonwebtoken_jjwt_0_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_buffer_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_http2_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_http_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_socks_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_common_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_handler_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_handler_proxy_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_resolver_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_4_1_32_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_epoll_4_1_31_Final_linux_x86_64_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_native_unix_common_4_1_31_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_opencensus_opencensus_api_0_18_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_opencensus_opencensus_contrib_grpc_metrics_0_18_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_activation_javax_activation_api_1_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_cache_cache_api_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_transaction_jta_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_xml_bind_jaxb_api_2_3_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__joda_time_joda_time_2_10_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__junit_junit_4_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_bytebuddy_byte_buddy_1_8_15_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_sourceforge_htmlunit_htmlunit_2_33_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_sourceforge_htmlunit_htmlunit_core_js_2_33_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_sourceforge_htmlunit_htmlunit_cssparser_1_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_sourceforge_htmlunit_neko_htmlunit_2_33_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_commons_commons_exec_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_commons_commons_lang3_3_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_commons_commons_text_1_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_httpcomponents_httpclient_4_5_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_4_4_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_httpcomponents_httpmime_4_5_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_atteo_classindex_classindex_3_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_checkerframework_checker_compat_qual_2_5_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_checkerframework_checker_qual_2_5_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_codehaus_mojo_animal_sniffer_annotations_1_17_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_eclipse_jetty_jetty_client_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_eclipse_jetty_jetty_http_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_eclipse_jetty_jetty_io_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_eclipse_jetty_jetty_util_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_eclipse_jetty_jetty_xml_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_eclipse_jetty_websocket_websocket_api_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_eclipse_jetty_websocket_websocket_client_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_eclipse_jetty_websocket_websocket_common_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_fluentlenium_fluentlenium_core_3_7_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_joda_joda_convert_1_9_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_mongodb_bson_3_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_mongodb_mongodb_driver_async_3_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_mongodb_mongodb_driver_core_3_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_mongodb_scala_mongo_scala_bson_2_12_2_6_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_mongodb_scala_mongo_scala_driver_2_12_2_6_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_collection_compat_2_12_0_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_12_0_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_12_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_12_1_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_sbt_test_interface_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_12_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_12_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatestplus_play_scalatestplus_play_2_12_4_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_htmlunit_driver_2_33_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_api_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_edge_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_ie_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_java_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_opera_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_remote_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_safari_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_support_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_slf4j_jcl_over_slf4j_1_7_25_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_slf4j_jul_to_slf4j_1_7_25_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_25_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_macro_compat_2_12_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__xalan_serializer_2_7_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__xalan_xalan_2_7_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__xerces_xercesImpl_2_12_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__xml_apis_xml_apis_1_4_01_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/IdeaProjects-catalog-service-user-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/user-service-project-user-service-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/play2_project_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/scalapb.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/protobuf/product.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/protobuf/user.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/controllers/GrpcServer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/controllers/UserController.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/servers/UserServer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/services/UserStorageService.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/UnitSpec.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/UserTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/any.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/api.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/compiler/plugin.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/descriptor.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/duration.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/empty.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/field_mask.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/source_context.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/struct.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/timestamp.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/type.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/wrappers.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/protobuf_external/scalapb/scalapb.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/user-service_2.12/0.1/resolved.xml.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/user-service_2.12/0.1/resolved.xml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-compile-internal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-compile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-optional.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-protobuf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-provided.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-runtime-internal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-runtime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-scala-tool.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-test-internal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-user-service_2.12-test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ivy-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ivy-report.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/UnitSpec.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/user-service_2.12-0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/$global/ivySbt/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/$global/projectDescriptors/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/$global/$global/discoveredMainClasses/data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/$global/$global/protocArguments/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/exportedProductJars/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/internalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/mainClass/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/protobuf_2.12/in-cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/protobuf_2.12/out-cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/protocUnpackDependencies/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/unmanagedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/unmanagedJars/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspathAsJars/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/exportedProductJars/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/fullClasspathAsJars/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/internalDependencyAsJars/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/unmanagedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/unmanagedJars/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/unmanagedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/unmanagedJars/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__aopalliance_aopalliance_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__ch_qos_logback_logback_classic_1_2_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__ch_qos_logback_logback_core_1_2_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_codeborne_phantomjsdriver_1_4_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_annotations_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_core_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_databind_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_api_grpc_proto_google_common_protos_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_code_findbugs_jsr305_3_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_code_findbugs_jsr305_3_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_code_gson_gson_2_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_errorprone_error_prone_annotations_2_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_guava_failureaccess_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_guava_guava_20_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_guava_guava_27_0_jre_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_inject_extensions_guice_assistedinject_4_2_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_inject_guice_4_2_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_j2objc_j2objc_annotations_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_google_protobuf_protobuf_java_3_6_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_lihaoyi_fastparse_2_12_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_lihaoyi_fastparse_utils_2_12_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_lihaoyi_sourcecode_2_12_0_1_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_novocode_junit_interface_0_11_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_squareup_okhttp3_okhttp_3_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_squareup_okio_okio_1_14_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_thesamet_scalapb_lenses_2_12_0_8_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_thesamet_scalapb_scalapb_runtime_2_12_0_8_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_thesamet_scalapb_scalapb_runtime_grpc_2_12_0_8_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_12_2_5_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_akka_akka_http_core_2_12_10_1_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_akka_akka_parsing_2_12_10_1_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_12_2_5_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_akka_akka_slf4j_2_12_2_5_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_12_2_5_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_netty_netty_reactive_streams_2_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_netty_netty_reactive_streams_http_2_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_build_link_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_cachecontrol_2_12_1_1_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_ahc_ws_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_ahc_ws_standalone_2_12_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_akka_http_server_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_exceptions_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_functional_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_guice_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_json_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_netty_server_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_server_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_streams_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_test_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_ws_2_12_2_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_ws_standalone_2_12_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_ws_standalone_json_2_12_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_play_ws_standalone_xml_2_12_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_shaded_asynchttpclient_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_shaded_oauth_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_play_twirl_api_2_12_1_4_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_12_0_3_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__commons_codec_commons_codec_1_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__commons_io_commons_io_2_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__commons_logging_commons_logging_1_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__commons_net_commons_net_3_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_grpc_grpc_context_1_15_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_grpc_grpc_core_1_15_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_grpc_grpc_netty_1_15_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_grpc_grpc_protobuf_1_15_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_grpc_grpc_protobuf_lite_1_15_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_grpc_grpc_stub_1_15_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_jsonwebtoken_jjwt_0_9_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_buffer_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_buffer_4_1_31_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_codec_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_codec_http2_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_codec_http_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_codec_socks_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_common_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_common_4_1_31_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_handler_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_handler_proxy_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_resolver_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_resolver_4_1_31_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_transport_4_1_27_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_transport_4_1_31_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_transport_native_epoll_4_1_31_Final_linux_x86_64_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_netty_netty_transport_native_unix_common_4_1_31_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_opencensus_opencensus_api_0_12_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__io_opencensus_opencensus_contrib_grpc_metrics_0_12_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__javax_activation_javax_activation_api_1_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__javax_cache_cache_api_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__javax_transaction_jta_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__javax_xml_bind_jaxb_api_2_3_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__joda_time_joda_time_2_10_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__junit_junit_4_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__net_bytebuddy_byte_buddy_1_8_15_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__net_sourceforge_htmlunit_htmlunit_2_33_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__net_sourceforge_htmlunit_htmlunit_core_js_2_33_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__net_sourceforge_htmlunit_htmlunit_cssparser_1_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__net_sourceforge_htmlunit_neko_htmlunit_2_33_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_apache_commons_commons_exec_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_apache_commons_commons_lang3_3_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_apache_commons_commons_text_1_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_apache_httpcomponents_httpclient_4_5_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_4_4_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_apache_httpcomponents_httpmime_4_5_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_atteo_classindex_classindex_3_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_checkerframework_checker_qual_2_5_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_codehaus_mojo_animal_sniffer_annotations_1_17_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_eclipse_jetty_jetty_client_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_eclipse_jetty_jetty_http_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_eclipse_jetty_jetty_io_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_eclipse_jetty_jetty_util_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_eclipse_jetty_jetty_xml_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_eclipse_jetty_websocket_websocket_api_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_eclipse_jetty_websocket_websocket_client_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_eclipse_jetty_websocket_websocket_common_9_4_12_v20180830_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_fluentlenium_fluentlenium_core_3_7_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_joda_joda_convert_1_9_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_mongodb_bson_3_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_mongodb_mongodb_driver_async_3_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_mongodb_mongodb_driver_core_3_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_mongodb_scala_mongo_scala_bson_2_12_2_6_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_mongodb_scala_mongo_scala_driver_2_12_2_6_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scala_lang_modules_scala_collection_compat_2_12_0_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_12_0_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_12_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_12_1_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scala_sbt_test_interface_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scalactic_scalactic_2_12_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scalatest_scalatest_2_12_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_scalatestplus_play_scalatestplus_play_2_12_4_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_htmlunit_driver_2_33_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_api_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_edge_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_ie_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_java_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_opera_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_remote_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_safari_driver_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_seleniumhq_selenium_selenium_support_3_141_59_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_slf4j_jcl_over_slf4j_1_7_25_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_slf4j_jul_to_slf4j_1_7_25_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_25_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__org_typelevel_macro_compat_2_12_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__xalan_serializer_2_7_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__xalan_xalan_2_7_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__xerces_xercesImpl_2_12_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/libraries/sbt__xml_apis_xml_apis_1_4_01_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/modules/wishlist-service-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/modules/wishlist-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/play2_project_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/build.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/project/build.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/protobuf/product.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/Demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/controllers/ControllerExecutionContext.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/controllers/GrpcServer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/controllers/ProductController.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/models/MongoModel.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/models/MongoProduct.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/servers/ProductServer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/services/ProductStorageService.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/services/StorageService.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/main/scala/utils/FunctionalObserver.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/test/scala/HolaTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/test/scala/ProductTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/src/test/scala/UnitSpec.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/any.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/api.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/compiler/plugin.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/descriptor.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/duration.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/empty.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/field_mask.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/source_context.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/struct.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/timestamp.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/type.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/google/protobuf/wrappers.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/protobuf_external/scalapb/scalapb.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/controllers/ControllerExecutionContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/controllers/GrpcServer$$anon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/controllers/GrpcServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/controllers/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/models/MongoModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/models/MongoProduct$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/models/MongoProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/AddProductResponse$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/AddProductResponse$AddProductResponseLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/AddProductResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/GetAllRequest$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/GetAllRequest$GetAllRequestLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/GetAllRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Ping$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Ping$PingLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Ping.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Pong$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Pong$PongLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Pong.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Product$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Product$ProductLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductIdRequest$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductIdRequest$ProductIdRequestLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductIdRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductIds$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductIds$ProductIdsLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductIds.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductProto$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductProto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductResponse$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductResponse$ProductResponseLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$$anon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$$anon$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$$anon$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$$anon$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$$anon$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$ProductService$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$ProductServiceBlockingClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$ProductServiceBlockingStub$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$ProductServiceBlockingStub.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$ProductServiceStub$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc$ProductServiceStub.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductServiceGrpc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductsList$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductsList$ProductsListLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/ProductsList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Status$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Status$Failed$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Status$Ok$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Status$Unrecognized$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Status$Unrecognized.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/product/Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/servers/ProductServer$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/servers/ProductServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/services/ProductStorageService$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/services/ProductStorageService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/services/StorageService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/AddItemRequest$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/AddItemRequest$AddItemRequestLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/AddItemRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/GetAllUsersResponse$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/GetAllUsersResponse$GetAllUsersResponseLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/GetAllUsersResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/User$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/User$UserLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserId$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserId$UserIdLens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserId.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserProto$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserProto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$$anon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$$anon$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$$anon$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$$anon$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$$anon$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$$anon$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$$anon$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$UserService$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$UserServiceBlockingClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$UserServiceBlockingStub$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$UserServiceBlockingStub.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$UserServiceStub$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc$UserServiceStub.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/user/UserServiceGrpc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/classes/utils/ObserverWrapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/default/wishlist-service_2.12/0.1/resolved.xml.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/default/wishlist-service_2.12/0.1/resolved.xml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-compile-internal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-compile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-optional.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-protobuf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-provided.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-runtime-internal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-runtime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-scala-tool.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-test-internal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/default-wishlist-service_2.12-test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/ivy-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/resolution-cache/reports/ivy-report.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/AddProductResponse.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/GetAllRequest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/Ping.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/Pong.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/Product.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/ProductIdRequest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/ProductIds.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/ProductProto.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/ProductResponse.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/ProductServiceGrpc.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/ProductsList.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/product/Status.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/user/AddItemRequest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/user/GetAllUsersResponse.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/user/User.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/user/UserId.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/user/UserProto.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/src_managed/main/user/UserServiceGrpc.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/test-classes/HolaTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/test-classes/ProductTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/scala-2.12/test-classes/UnitSpec.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/$global/$global/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/$global/ivySbt/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/$global/projectDescriptors/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/$global/$global/discoveredMainClasses/data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/$global/$global/protocArguments/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/compile/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/internalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/protocGenerate/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/protocGenerate/$global/streams/protobuf_2.12/in-cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/protocGenerate/$global/streams/protobuf_2.12/out-cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/protocUnpackDependencies/$global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/unmanagedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/compile/unmanagedJars/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/runtime/unmanagedClasspath/$global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wishlist-service/target/streams/runtime/unmanagedJars/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../wishlist-service/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../wishlist-service/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/Dependencies.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/scalapb.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../wishlist-service/project/scalapb.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/protobuf/catalog.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/protobuf/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../wishlist-service/src/main/protobuf/user.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/Demo.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/Main.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/Server.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/controllers/ControllerExecutionContext.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controllers/ControllerExecutionContext.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/controllers/ProductController.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/controllers/UserController.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/models/MongoModel.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/MongoModel.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/models/MongoProduct.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/MongoProduct.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/models/MongoUser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/MongoUser.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/services/ProductStorageService.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/services/StorageService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/services/StorageService.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/services/UserStorageService.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/scala/utils/FunctionalObserver.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/utils/FunctionalObserver.scala" afterDir="false" />
+    </list>
+    <list id="64255b09-9100-4a29-afca-0c13e20ee6a9" name="Apply: Reformat of proto files. ProductService and UserService implemented. Also servers" comment="" />
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/project/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="user-service" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/UserTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/AddUserResponse.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/protobuf/product.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="49" selection-start-line="49" selection-end-line="52" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/GetUserResponse.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/AddItemResponse.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/protobuf/user.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/controllers/UserController.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+              <folding>
+                <element signature="e#21#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/UnitSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/services/UserStorageService.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+              <folding>
+                <element signature="e#18#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/models/MongoUser.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>None</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/scala/servers/UserServer.scala" />
+        <option value="$PROJECT_DIR$/src/main/protobuf/product.proto" />
+        <option value="$PROJECT_DIR$/src/main/test/scala/UnitSpec.scala" />
+        <option value="$PROJECT_DIR$/src/main/test/scala/UserTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Demo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/services/UserStorageService.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/models/MongoUser.scala" />
+        <option value="$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/GetUserResponse.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/controllers/UserController.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/UserTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/protobuf/user.proto" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="servers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="scala-2.12" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="scala-2.12" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="scala-2.12" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="scala-2.12" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="servers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="scala-2.12" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="scala-2.12" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.sbt" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="diff.base" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="ScalaTest.UserTest.UserService should return None in getting a non-existent User">
+    <configuration name="UserServer" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="servers.UserServer" />
+      <module name="IdeaProjects-catalog-service-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="servers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="IdeaProjects-catalog-service-user-service" />
+      <setting name="path" value="UserTest" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Class" />
+      <setting name="path" value="UserTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.UserService should add a new Item for an existing User" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="IdeaProjects-catalog-service-user-service" />
+      <setting name="path" value="UserTest" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="UserTest" />
+      <setting name="testName" value="UserService should add a new Item for an existing User" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.UserService should get all Users" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="IdeaProjects-catalog-service-user-service" />
+      <setting name="path" value="UserTest" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="UserTest" />
+      <setting name="testName" value="UserService should get all Users" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.UserService should return None in getting a non-existent User" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="IdeaProjects-catalog-service-user-service" />
+      <setting name="path" value="UserTest" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="UserTest" />
+      <setting name="testName" value="UserService should return None in getting a non-existent User" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="ScalaTest.UserTest.UserService should return None in getting a non-existent User" />
+        <item itemvalue="Application.UserServer" />
+        <item itemvalue="ScalaTest.UserTest.UserService should add a new Item for an existing User" />
+        <item itemvalue="ScalaTest.UserTest.UserService should return None in getting a non-existent User" />
+        <item itemvalue="ScalaTest.UserTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="user-service" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="user-service [file:/Users/nicolaspadros/IdeaProjects/catalog-service/user-service/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="user-service-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4666904127000" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3585519480" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
+        <entry key="$PROJECT_DIR$/project/scalapb.sbt" value="1408557375" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Desktop/daoo" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/daoo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/.." value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../wishlist-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../metro/ai-engine/backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../metro/gateway-server-deprecated/backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../metro/gateway-server/backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../metro/videostream" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../play-scala-starter" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../videostream" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../videostream-copy" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../videostream/videostream" value="PREVIEW" />
+        <entry key="$USER_HOME$/play-scala-seed" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41c87310-fb59-4c5d-a3f6-a9afde816287" name="Default Changelist" comment="" />
+      <changelist id="64255b09-9100-4a29-afca-0c13e20ee6a9" name="Apply: Reformat of proto files. ProductService and UserService implemented. Also servers" comment="" />
+      <created>1555699819176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555699819176</updated>
+      <workItem from="1555699820659" duration="10972000" />
+      <workItem from="1555804004464" duration="343000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="UserTest_UserService_should_return_None_in_getting_a_non-existent_User - 2019.04.20 at 20h 36m 03s.xml">
+      <configuration name="UserTest.UserService should return None in getting a non-existent User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="UserTest_UserService_should_return_None_in_getting_a_non-existent_User - 2019.04.20 at 20h 36m 23s.xml">
+      <configuration name="UserTest.UserService should return None in getting a non-existent User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="UserTest_UserService_should_return_None_in_getting_a_non-existent_User - 2019.04.20 at 20h 37m 51s.xml">
+      <configuration name="UserTest.UserService should return None in getting a non-existent User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="UserTest_UserService_should_return_None_in_getting_a_non-existent_User - 2019.04.20 at 20h 38m 52s.xml">
+      <configuration name="UserTest.UserService should return None in getting a non-existent User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="UserTest_UserService_should_return_None_in_getting_a_non-existent_User - 2019.04.20 at 20h 39m 44s.xml">
+      <configuration name="UserTest.UserService should return None in getting a non-existent User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="UserTest_UserService_should_return_None_in_getting_a_non-existent_User - 2019.04.20 at 20h 40m 53s.xml">
+      <configuration name="UserTest.UserService should return None in getting a non-existent User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="UserTest_UserService_should_return_None_in_getting_a_non-existent_User - 2019.04.20 at 20h 41m 11s.xml">
+      <configuration name="UserTest.UserService should return None in getting a non-existent User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="UserTest_UserService_should_add_a_new_Item_for_an_existing_User - 2019.04.20 at 20h 42m 31s.xml">
+      <configuration name="UserTest.UserService should add a new Item for an existing User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="UserTest_UserService_should_add_a_new_Item_for_an_existing_User - 2019.04.20 at 20h 43m 14s.xml">
+      <configuration name="UserTest.UserService should add a new Item for an existing User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="UserTest_UserService_should_return_None_in_getting_a_non-existent_User - 2019.04.20 at 21h 03m 20s.xml">
+      <configuration name="UserTest.UserService should return None in getting a non-existent User" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11315000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32711622" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.3997114" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" weight="0.32711622" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32711622" />
+      <window_info anchor="bottom" id="Docker" order="10" weight="0.32756132" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.3997114" />
+      <window_info anchor="bottom" id="Statistic" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32756132" />
+      <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="sbt" order="5" sideWeight="0.49785408" visible="true" weight="0.15808298" />
+      <window_info anchor="right" id="Coverage" order="6" sideWeight="0.50214595" side_tool="true" visible="true" weight="0.15808298" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Gradle" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="11" />
+      <window_info anchor="right" id="SciView" order="12" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/services/UserStorageService.scala</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/product/AddProductResponse.scala</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/GetUserResponse.scala</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/controllers/UserController.scala</url>
+          <line>35</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/controllers/UserController.scala</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/user_service$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1555802946167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/models/MongoProduct.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/services/ProductStorageService.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/utils/FunctionalObserver.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/servers/ProductServer.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala" />
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/services/StorageService.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/User.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/product/AddProductResponse.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1225">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/UserServiceGrpc.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="138" column="17" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Demo.scala" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/io.grpc/grpc-core/srcs/grpc-core-1.18.0-sources.jar!/io/grpc/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7215">
+          <caret line="529" column="11" selection-start-line="529" selection-start-column="11" selection-end-line="529" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/servers/UserServer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/controllers/UserController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding>
+            <element signature="e#21#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/UnitSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/services/UserStorageService.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding>
+            <element signature="e#18#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/models/MongoUser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/UserTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/GetUserResponse.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/AddItemResponse.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/user/AddUserResponse.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/protobuf/product.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" selection-start-line="49" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/protobuf/user.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

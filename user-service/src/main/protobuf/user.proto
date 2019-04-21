@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+import "product.proto";
+
+message User {
+    int32 id = 1;
+    string name = 2;
+    string username = 3;
+    repeated int32 products = 4;
+}
+
+service UserService {
+    rpc AddItem (AddItemRequest) returns (AddItemResponse) {}
+    rpc AddUser (User) returns (AddUserResponse) {}
+    rpc GetUser (UserId) returns (GetUserResponse) {}
+    rpc GetAllUsers (GetAllRequest) returns (GetAllUsersResponse) {}
+    rpc GetWishList (UserId) returns (ProductIds) {}
+    rpc GetWishListWithDescription (UserId) returns (ProductsList) {}
+    rpc GetPing (Ping) returns (Pong) {}
+}
+
+message AddItemRequest {
+    int32 product = 1;
+    int32 user = 2;
+}
+
+message GetAllUsersResponse {
+    repeated User users = 1;
+}
+
+//Allows for Option[User]
+message AddItemResponse {
+    User user = 1;
+}
+
+message UserId {
+    int32 id = 1;
+}
+
+message AddUserResponse {
+    Status status = 1;
+}
+//Allows for Option[User]
+message GetUserResponse {
+    User user = 1;
+}
+
+
