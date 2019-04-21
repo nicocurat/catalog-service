@@ -1,0 +1,44 @@
+# Created by .ignore support plugin (hsz.mobi)
+### SBT template
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen### Scala template
+*.class
+*.log
+
+db/.DS_Store
+db/mongo/.DS_Store
+db/mongo/catalog_service/.DS_Store
+db/mongo/catalog_service/data/.DS_Store
+db/mongo/catalog_service/data/collection-0--1510962257206734930.wt
+db/mongo/catalog_service/data/collection-2--1510962257206734930.wt
+db/mongo/catalog_service/data/collection-4--1510962257206734930.wt
+db/mongo/catalog_service/data/collection-7--1510962257206734930.wt
+db/mongo/catalog_service/data/collection-9--1510962257206734930.wt
+db/mongo/catalog_service/data/diagnostic.data/metrics.2019-04-20T22-43-12Z-00000
+db/mongo/catalog_service/data/index-1--1510962257206734930.wt
+db/mongo/catalog_service/data/index-10--1510962257206734930.wt
+db/mongo/catalog_service/data/index-3--1510962257206734930.wt
+db/mongo/catalog_service/data/index-5--1510962257206734930.wt
+db/mongo/catalog_service/data/index-6--1510962257206734930.wt
+db/mongo/catalog_service/data/index-8--1510962257206734930.wt
+db/mongo/catalog_service/data/journal/WiredTigerLog.0000000001
+project/build.properties
+user-service/.DS_Store
