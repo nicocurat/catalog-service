@@ -16,6 +16,8 @@ RUN \
 # Define working directory
 WORKDIR /root
 
-ADD .. /root
+ADD src /root/src
+ADD project /root/project
+ADD build.sbt /root/build.sbt
 
 CMD sbt run
