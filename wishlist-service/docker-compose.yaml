@@ -13,7 +13,7 @@ services:
     depends_on:
       - mongo_database
     ports:
-       - 50000:50000
+#       - 50000:50000
        - 8081:8081
 
 #volumes:
