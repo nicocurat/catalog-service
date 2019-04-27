@@ -14,9 +14,14 @@ project/plugins/project/
 .lib/
 ### Example user template template
 ### Example user template
+.DS_Store
+/.DS_Store
+/db/
+db/
 
 # IntelliJ project files
 .idea
+/.idea
 *.iml
 out
 gen### Scala template
