@@ -9,11 +9,13 @@ services:
       - ./db/mongo/catalog_service/data:/data/db
     restart: always
   catalog_service:
-    build: project
+    build: .
     depends_on:
       - mongo_database
     ports:
-       - 50000:50000
+      #       - 50000:50000
+      - 9001:9001
 
-volumes:
-  ./db/mongo/catalog_service/data:
+#volumes:
+#  ./db/mongo/catalog_service/data:
+

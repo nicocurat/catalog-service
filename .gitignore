@@ -22,6 +22,7 @@ db/
 # IntelliJ project files
 .idea
 /.idea
+/target
 *.iml
 out
 gen### Scala template
