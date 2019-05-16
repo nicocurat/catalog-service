@@ -7,8 +7,6 @@ message Product {
     double price = 4;
 }
 
-
-
 service ProductService {
     rpc GetProduct (ProductIdRequest) returns (Product) {}
     rpc GetAllProducts (None) returns (ProductsList) {}

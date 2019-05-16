@@ -1,15 +1,16 @@
 import java.io.IOException
 
 import LoadBalancer.{ProductConnection, UserConnection}
-import product.ProductServiceGrpc.ProductService
-import product._
+import balancer.BalancerServiceGrpc.BalancerService
+import product.{AddProductResponse, None, Ping, Pong, ProductIdRequest, ProductIds, ProductsList, Product}
 import user.{AddItemRequest, GetAllUsersResponse, User, UserId}
-import user.UserServiceGrpc.UserService
 
-import scala.concurrent.Future
+import scala.concurrent.{ExecutionContext, Future}
 
 
-class Router(val users: List[(String, Int)], val products: List[(String, Int)]) extends UserService with ProductService {
+class Router(val users: List[(String, Int)], val products: List[(String, Int)]) extends BalancerService{
+
+  implicit val ex = ExecutionContext.global
 
   private var userIndex = 0
   private var productIndex = 0

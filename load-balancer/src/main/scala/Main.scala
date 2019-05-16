@@ -11,7 +11,7 @@ object Main extends App {
 
   val runnable: Runnable = () => {
     while (true) {
-      router.ping
+//      router.ping
       try
         Thread.sleep(interval)
       catch {
