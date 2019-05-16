@@ -1,16 +1,15 @@
-import java.io.IOException
+import java.util.concurrent.{ScheduledThreadPoolExecutor, TimeUnit}
 
 import LoadBalancer.{ProductConnection, UserConnection}
-import balancer.BalancerServiceGrpc.BalancerService
-import product.{AddProductResponse, None, Ping, Pong, ProductIdRequest, ProductIds, ProductsList, Product}
+import product.ProductServiceGrpc.ProductService
+import product._
 import user.{AddItemRequest, GetAllUsersResponse, User, UserId}
+import user.UserServiceGrpc.UserService
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.Future
 
 
-class Router(val users: List[(String, Int)], val products: List[(String, Int)]) extends BalancerService{
-
-  implicit val ex = ExecutionContext.global
+class Router(val users: List[(String, Int)], val products: List[(String, Int)]) extends UserService with ProductService {
 
   private var userIndex = 0
   private var productIndex = 0
@@ -20,30 +19,30 @@ class Router(val users: List[(String, Int)], val products: List[(String, Int)]) 
 
   private val productConnections = products.map{ case (host: String, port: Int) => new ProductConnection(host, port) }
 
-//  new Thread(() => {
-//    while(true){
-//      ping
-//    }
-//  })
+  new Thread(() => {
+    while(true){
+      ping
+    }
+  })
 
-//  val ex = new ScheduledThreadPoolExecutor(1)
-//  val task = new Runnable {
-//    def run() = println("Beep!")
-//  }
-//  val f = ex.scheduleAtFixedRate(task, 1, 1, TimeUnit.SECONDS)
-//  f.cancel(false)
+  val ex = new ScheduledThreadPoolExecutor(1)
+  val task = new Runnable {
+    def run() = println("Beep!")
+  }
+  val f = ex.scheduleAtFixedRate(task, 1, 1, TimeUnit.SECONDS)
+  f.cancel(false)
 
-  private def nextUser = {
+  private def nextUser(): Unit = {
     if (userIndex >= userConnections.length) userIndex = 0
     else userIndex += 1
   }
 
-  private def nextProduct = {
+  private def nextProduct(): Unit = {
     if (productIndex>= productConnections.length) productIndex = 0
     else productIndex += 1
   }
 
-  def ping: Unit = {
+  def ping(): Unit = {
     userConnections.map(user => user.getPing(Ping()))
     productConnections.map(user => user.getPing(Ping()))
     userConnections.filter((connection: UserConnection) => connection.isAlive)
@@ -52,125 +51,27 @@ class Router(val users: List[(String, Int)], val products: List[(String, Int)]) 
     println(productConnections.map(_.isAlive))
   }
 
-  override def getProduct(request: ProductIdRequest): Future[Product] = {
-    try{
-      productConnections(productIndex).getPing(Ping())
-        .flatMap(_ => productConnections(productIndex).getProduct(request))
-    } catch {
-      case _: IOException => {
-        nextProduct
-        getProduct(request)
-      }
-    }
-  }
+  def forwardToUser(function: () => Unit): Future[User] = ???
 
-  override def getAllProducts(request: None): Future[ProductsList] = {
-    try {
-      productConnections(productIndex).getPing(Ping())
-        .flatMap(_ => productConnections(productIndex).getAllProducts(request))
-    } catch {
-      case _: IOException => {
-        nextProduct
-        getAllProducts(request)
-      }
-    }
-  }
+  override def addItem(request: AddItemRequest): Future[User] = userConnections(userIndex).addItem(request)
 
-  override def getProducts(request: ProductIds): Future[ProductsList] = {
-    try {
-      productConnections(productIndex).getPing(Ping())
-        .flatMap(_ => productConnections(productIndex).getProducts(request))
-    } catch {
-      case _: IOException => {
-        nextProduct
-        getProducts(request)
-      }
-    }
-  }
+  override def addUser(request: User): Future[UserId] =  userConnections(userIndex).addUser(request)
 
-  override def addProduct(request: Product): Future[AddProductResponse] = {
-    try {
-      productConnections(productIndex).getPing(Ping())
-        .flatMap(_ => productConnections(productIndex).addProduct(request))
-    } catch {
-      case _: IOException => {
-        nextProduct
-        addProduct(request)
-      }
-    }
-  }
+  override def getUserById(request: UserId): Future[User] =  userConnections(userIndex).getUserById(request)
 
-  override def addItem(request: AddItemRequest): Future[User] = {
-    try {
-      userConnections(userIndex).getPing(Ping())
-        .flatMap(_ => userConnections(userIndex).addItem(request))
-    } catch {
-      case _: IOException => {
-        nextUser
-        addItem(request)
-      }
-    }
-  }
+  override def getAllUsers(request: None): Future[GetAllUsersResponse] =  userConnections(userIndex).getAllUsers(request)
 
-  override def addUser(request: User): Future[UserId] = {
-    try {
-      userConnections(userIndex).getPing(Ping())
-        .flatMap(_ => userConnections(userIndex).addUser(request))
-    } catch {
-      case _: IOException => {
-        nextUser
-        addUser(request)
-      }
-    }
-  }
+  override def getWishList(request: UserId): Future[ProductIds] =  userConnections(userIndex).getWishList(request)
 
-  override def getUserById(request: UserId): Future[User] = {
-    try {
-      userConnections(userIndex).getPing(Ping())
-        .flatMap(_ => userConnections(userIndex).getUserById(request))
-    } catch {
-      case _: IOException => {
-        nextUser
-        getUserById(request)
-      }
-    }
-  }
+  override def getWishListWithDescription(request: UserId): Future[ProductsList] =  userConnections(userIndex).getWishListWithDescription(request)
 
-  override def getAllUsers(request: None): Future[GetAllUsersResponse] = {
-    try {
-      userConnections(userIndex).getPing(Ping())
-        .flatMap(_ => userConnections(userIndex).getAllUsers(request))
-    } catch {
-      case _: IOException => {
-        nextUser
-        getAllUsers(request)
-      }
-    }
-  }
+  override def getProduct(request: ProductIdRequest): Future[Product] = productConnections(productIndex).getProduct(request)
 
-  override def getWishList(request: UserId): Future[ProductIds] = {
-    try {
-      userConnections(userIndex).getPing(Ping())
-        .flatMap(_ => userConnections(userIndex).getWishList(request))
-    } catch {
-      case _: IOException => {
-        nextUser
-        getWishList(request)
-      }
-    }
-  }
+  override def getAllProducts(request: None): Future[ProductsList] = productConnections(productIndex).getAllProducts(request)
 
-  override def getWishListWithDescription(request: UserId): Future[ProductsList] = {
-    try {
-      userConnections(userIndex).getPing(Ping())
-        .flatMap(_ => userConnections(userIndex).getWishListWithDescription(request))
-    } catch {
-      case _: IOException => {
-        nextUser
-        getWishListWithDescription(request)
-      }
-    }
-  }
+  override def getProducts(request: ProductIds): Future[ProductsList] = productConnections(productIndex).getProducts(request)
 
-  override def getPing(request: Ping): Future[Pong] = ???
+  override def getPing(request: Ping): Future[Pong] = productConnections(productIndex).getPing(request)
+
+  override def addProduct(request: Product): Future[AddProductResponse] = productConnections(productIndex).addProduct(request)
 }
