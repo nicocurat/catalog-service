@@ -1,6 +1,6 @@
 version: '3'
 services:
-  mongo_whishlist_database:
+  mongo_whislist_database:
     image: mongo:4.0.5
     container_name: mongo_database
     ports:
@@ -16,9 +16,10 @@ services:
     networks:
       - wishlist-network
   catalog_service:
-    build: .
+#    build: .
+    image: wishlist-service
     depends_on:
-      - mongo_whishlist_database
+      - mongo_whislist_database
     ports:
 #       - 50000:50000
        - 9000:9000
