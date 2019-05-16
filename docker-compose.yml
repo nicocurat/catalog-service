@@ -7,9 +7,6 @@ services:
     volumes:
       - mongodb:/data/db
     restart: always
-    networks:
-      catalog_network:
-        ipv4_address: 172.18.1.1
 
   wishlist_service:
     image: wishlist-service_catalog_service:latest
@@ -20,28 +17,16 @@ services:
       - mongo
     ports:
       - 8081:8081
-    networks:
-      catalog_network:
-        ipv4_address: 172.18.2.1
 
-#  user_service:
-#    image: user-service_catalog_service:latest
-#    build:
-#      context: user-service
-#      dockerfile: Dockerfile
-#    depends_on:
-#      - mongo
-#    ports:
-#      - 9001:9001
-#    networks:
-#      - catalog_network
-
-networks:
-  catalog_network:
-    ipam:
-      driver: default
-      config:
-        - subnet: 172.18.0.0/16
+  user_service:
+    image: user-service_catalog_service:latest
+    build:
+      context: user-service
+      dockerfile: Dockerfile
+    depends_on:
+      - mongo
+    ports:
+      - 9001:9001
 
 volumes:
   mongodb:

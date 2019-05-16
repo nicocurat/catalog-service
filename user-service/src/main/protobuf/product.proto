@@ -10,14 +10,20 @@ message Product {
 
 
 service ProductService {
-    rpc GetProduct (ProductIdRequest) returns (Product) {}
-    rpc GetAllProducts (None) returns (ProductsList) {}
+    rpc GetProduct (ProductIdRequest) returns (ProductResponse) {}
+    rpc GetAllProducts (GetAllRequest) returns (ProductsList) {}
     rpc GetProducts (ProductIds) returns (ProductsList) {}
     rpc GetPing (Ping) returns (Pong) {}
     rpc AddProduct(Product) returns (AddProductResponse) {}
 }
 
-message None {}
+//allows for Option[Product]
+message ProductResponse {
+    Product product = 1;
+}
+
+
+message GetAllRequest {}
 
 message ProductsList {
     repeated Product products = 1;

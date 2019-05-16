@@ -19,7 +19,6 @@ class UserController extends ControllerExecutionContext with UserService with Gr
   private val stub: ProductServiceGrpc.ProductServiceStub = ProductServiceGrpc.stub(channel)
 
 
-
   override def addItem(request: AddItemRequest): Future[AddItemResponse] = {
     UserStorageService insertItem request map(user => {
       AddItemResponse(user)

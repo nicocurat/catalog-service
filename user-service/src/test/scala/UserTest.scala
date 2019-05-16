@@ -3,7 +3,7 @@ import java.util.concurrent.Executors
 import io.grpc.{ManagedChannel, ManagedChannelBuilder}
 import product.Status.Ok
 import product._
-import user.{AddItemRequest, AddItemResponse, GetUserResponse, User, UserId, UserServiceGrpc}
+import user._
 
 import scala.concurrent.duration.DurationInt
 import scala.concurrent.{Await, ExecutionContext}
