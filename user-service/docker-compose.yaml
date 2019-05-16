@@ -14,8 +14,8 @@ services:
     restart: always
     networks:
       - user-network
-  catalog_service:
-    build: .
+  user_service:
+    image: user-service_catalog_service:latest
     depends_on:
       - mongo_client_database
     ports:
