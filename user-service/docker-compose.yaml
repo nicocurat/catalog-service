@@ -1,21 +1,33 @@
 version: '3'
 services:
-  mongo_database:
-    image: mongo:3
+  mongo_client_database:
+    image: mongo:4.0.5
     container_name: mongo_database
     ports:
       - 27017:27017
     volumes:
-      - ./db/mongo/catalog_service/data:/data/db
+      - user-db:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=username
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=userDB
     restart: always
+    networks:
+      - user-network
   catalog_service:
     build: .
     depends_on:
-      - mongo_database
+      - mongo_client_database
     ports:
-      #       - 50000:50000
+#       - 50000:50000
       - 9001:9001
+    networks:
+      - user-network
 
-#volumes:
-#  ./db/mongo/catalog_service/data:
+networks:
+  user-network:
+    driver: bridge
+
+volumes:
+  user-db:
 
