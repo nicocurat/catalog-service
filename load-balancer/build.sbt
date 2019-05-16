@@ -1,5 +1,5 @@
 
-name := "LoadBalancer"
+name := "load-balancer"
 
 version := "0.1"
 
