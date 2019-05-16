@@ -39,7 +39,7 @@ class ProductTest extends UnitSpec {
 
 
   def addProductFut(id: Int): Future[AddProductResponse] = {
-    stub.addProduct(Product(id, "Cepillo de dientes", "Colgate", 3))
+    stub.addProduct(Product(43, "Caja de broche", "Colgate", 6))
   }
 
   var id = 5
@@ -64,14 +64,14 @@ class ProductTest extends UnitSpec {
   it should "return all Products" in {
     val productsList = Await.result(stub.getAllProducts(GetAllRequest()), 300 seconds)
 //    productsList should not be empty
-    productsList.products.size should equal(6)
+    productsList.products.size should equal(4)
   }
 
 
   it should "return several products" in {
     val products: ProductsList = Await.result(stub.getProducts(ProductIds(List(1,4, 6))), 200 seconds)
     println(products.products)
-    products.products.length should be(3)
+    products.products.length should be(1)
   }
 
 }
