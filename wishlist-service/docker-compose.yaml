@@ -26,7 +26,7 @@ services:
       - wishlist-network
 
 networks:
-  network:
+  wishlist-network:
     driver: bridge
 
 volumes:
