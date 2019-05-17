@@ -4,15 +4,15 @@ import "product.proto";
 import "user.proto";
 
 service BalancerService {
-    rpc GetProduct (ProductIdRequest) returns (Product) {}
-    rpc GetAllProducts (None) returns (ProductsList) {}
+    rpc GetProduct (ProductIdRequest) returns (ProductResponse) {}
+    rpc GetAllProducts (GetAllRequest) returns (ProductsList) {}
     rpc GetProducts (ProductIds) returns (ProductsList) {}
     rpc GetPing (Ping) returns (Pong) {}
     rpc AddProduct(Product) returns (AddProductResponse) {}
-    rpc AddItem (AddItemRequest) returns (User) {}
-    rpc AddUser (User) returns (UserId) {}
-    rpc GetUserById (UserId) returns (User) {}
-    rpc GetAllUsers (None) returns (GetAllUsersResponse) {}
+    rpc AddItem (AddItemRequest) returns (AddItemResponse) {}
+    rpc AddUser (User) returns (AddUserResponse) {}
+    rpc GetUser (UserId) returns (GetUserResponse) {}
+    rpc GetAllUsers (GetAllRequest) returns (GetAllUsersResponse) {}
     rpc GetWishList (UserId) returns (ProductIds) {}
     rpc GetWishListWithDescription (UserId) returns (ProductsList) {}
 }

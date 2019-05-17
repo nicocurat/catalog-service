@@ -22,9 +22,9 @@ class ProductConnection(val host: String, val port: Int) extends ProductService 
 
   def toggle = alive = !alive
 
-  override def getProduct(request: ProductIdRequest): Future[product.Product] = stub.getProduct(request)
+  override def getProduct(request: ProductIdRequest): Future[ProductResponse] = stub.getProduct(request)
 
-  override def getAllProducts(request: None): Future[ProductsList] = stub.getAllProducts(request)
+  override def getAllProducts(request: GetAllRequest): Future[ProductsList] = stub.getAllProducts(request)
 
   override def getProducts(request: ProductIds): Future[ProductsList] = stub.getProducts(request)
 

@@ -22,17 +22,7 @@ class UserConnection(val host: String, val port: Int) extends UserService {
 
   def toggle = alive = !alive
 
-  override def addItem(request: AddItemRequest): Future[User] = stub.addItem(request)
 
-  override def addUser(request: User): Future[UserId] = stub.addUser(request)
-
-  override def getUserById(request: UserId): Future[User] = stub.getUserById(request)
-
-  override def getAllUsers(request: None): Future[GetAllUsersResponse] = stub.getAllUsers(request)
-
-  override def getWishList(request: UserId): Future[ProductIds] = stub.getWishList(request)
-
-  override def getWishListWithDescription(request: UserId): Future[ProductsList] = stub.getWishListWithDescription(request)
 
   override def getPing(request: Ping): Future[Pong] = {
     try {
@@ -46,4 +36,16 @@ class UserConnection(val host: String, val port: Int) extends UserService {
       }
     }
   }
+
+  override def addItem(request: AddItemRequest): Future[AddItemResponse] = stub.addItem(request)
+
+  override def addUser(request: User): Future[AddUserResponse] = stub.addUser(request)
+
+  override def getUser(request: UserId): Future[GetUserResponse] = stub.getUser(request)
+
+  override def getAllUsers(request: GetAllRequest): Future[GetAllUsersResponse] = stub.getAllUsers(request)
+
+  override def getWishList(request: UserId): Future[ProductIds] = stub.getWishList(request)
+
+  override def getWishListWithDescription(request: UserId): Future[ProductsList] = stub.getWishListWithDescription(request)
 }
