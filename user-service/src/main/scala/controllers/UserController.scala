@@ -1,9 +1,11 @@
 package controllers
 
 import io.grpc.ManagedChannelBuilder
+import org.etcd4s.pb.etcdserverpb.LeaseGrantRequest
+import org.etcd4s.{Etcd4sClient, Etcd4sClientConfig}
 import product.Status.{Failed, Ok}
 import product._
-import services.UserStorageService
+import services.{EtcdService, UserStorageService}
 import user.UserServiceGrpc.UserService
 import user.{AddItemRequest, AddItemResponse, AddUserResponse, GetAllUsersResponse, GetUserResponse, User, UserId}
 
@@ -13,10 +15,15 @@ import scala.concurrent.Future
 class UserController extends ControllerExecutionContext with UserService with GrpcServer{
 
   //channel to send the gRPC Request
-  private val channel = ManagedChannelBuilder.forAddress("localhost", 8081).usePlaintext().build()
+  private lazy val channel = ManagedChannelBuilder.forAddress("localhost", 8081).usePlaintext().build()
 
-  //blocking to return the BufferedImage
   private val stub: ProductServiceGrpc.ProductServiceStub = ProductServiceGrpc.stub(channel)
+
+
+//  EtcdService.client.kvService.setKey("client-service", "localhost:8081")
+//  EtcdService.client.clusterService.
+
+
 
 
   override def addItem(request: AddItemRequest): Future[AddItemResponse] = {
