@@ -20,7 +20,7 @@ class UserTest extends UnitSpec {
   var id = 0
 
   "UserService" should "add a new User and get it" in {
-    id = 4
+    id += 1
     val newUser: User = User(id, "Pepe", "Pepe2", Nil)
     val status = Await.result(stub.addUser(newUser), 400 seconds)
     status.status should be(Ok)
@@ -52,7 +52,7 @@ class UserTest extends UnitSpec {
 
   it should "get all Users" in {
     val users = Await.result(stub.getAllUsers(GetAllRequest()), 200 seconds)
-    users.users should equal(Vector(User(1, "Pepe", "Pepe2", List(1))))
+    users.users should equal(List(User(1, "Pepe", "Pepe2", List(1))))
   }
   //
   //
