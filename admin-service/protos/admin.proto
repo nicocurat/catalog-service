@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+service Admin{
+    rpc AddUser(AddUserRequest) returns(AddUserResponse) {}
+}
+
+message AddUserRequest {
+    string email = 1;
+}
+
+message AddUserResponse {
+    Status status = 1;
+}
+
+
+enum Status {
+    OK = 0;
+    FAILED = 1;
+}
