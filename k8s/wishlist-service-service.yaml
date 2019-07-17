@@ -5,13 +5,10 @@ metadata:
   labels:
     app: wishlist-service
 spec:
-  containers:
-    envFrom:
-    - configMapRef:
-      name: env-configmap
   ports:
   - name: "8081"
     port: 8081
     targetPort: 8081
+  type: NodePort
   selector:
     app: wishlist-service

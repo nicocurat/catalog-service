@@ -13,7 +13,7 @@ import scala.concurrent.Future
 class UserController extends ControllerExecutionContext with UserService with GrpcServer{
 
   //channel to send the gRPC Request
-  private val channel = ManagedChannelBuilder.forAddress("localhost", 8081).usePlaintext().build()
+  private val channel = ManagedChannelBuilder.forAddress("172.17.0.10", 8081).usePlaintext().build()
 
   //blocking to return the BufferedImage
   private val stub: ProductServiceGrpc.ProductServiceStub = ProductServiceGrpc.stub(channel)

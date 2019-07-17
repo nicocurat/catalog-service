@@ -11,7 +11,7 @@ import scala.concurrent.{Await, ExecutionContext}
 class UserTest extends UnitSpec {
 
 
-  val channel: ManagedChannel = ManagedChannelBuilder.forAddress("localhost", 9001).usePlaintext().build()
+  val channel: ManagedChannel = ManagedChannelBuilder.forAddress("172.17.0.10", 8081).usePlaintext().build()
 
   //blocking to return the BufferedImage
   val stub: UserServiceGrpc.UserServiceStub = UserServiceGrpc.stub(channel)
@@ -22,7 +22,7 @@ class UserTest extends UnitSpec {
   "UserService" should "add a new User and get it" in {
     id += 1
     val newUser: User = User(id, "Pepe", "Pepe2", Nil)
-    val status = Await.result(stub.addUser(newUser), 400 seconds)
+    val status = Await.result(stub.addUser(newUser), 4 seconds)
     status.status should be(Ok)
     val response: GetUserResponse = Await.result(stub.getUser(UserId(id)), 400 seconds)
     response.user should equal(Some(newUser))
@@ -31,7 +31,7 @@ class UserTest extends UnitSpec {
 
   it should "return None in getting a non-existent User" in {
     id += 2
-    val response: GetUserResponse = Await.result(stub.getUser(UserId(id)), 800 seconds)
+    val response: GetUserResponse = Await.result(stub.getUser(UserId(id)), 200 seconds)
     println(response)
 //    response.user should not equal Some(User(id, "Pepe", "Pepe2", Nil))
     //    product.product should equal(Some(Product(id, "Cepillo de dientes", "Colgate", 3)))

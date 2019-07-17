@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: wishlist-service
-        image: wishlist-service_catalog_service:latest
-        imagePullPolicy: IfNotPresent
+        image: wishlist-service:0.1
+        imagePullPolicy: Never
         ports:
         - containerPort: 8081
         resources:
