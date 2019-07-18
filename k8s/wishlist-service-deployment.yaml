@@ -20,8 +20,8 @@ spec:
         imagePullPolicy: Never
         ports:
         - containerPort: 9001
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
+        envFrom:
+        - configMapRef:
+            name: env-configmap
+        resources: {}
       restartPolicy: Always

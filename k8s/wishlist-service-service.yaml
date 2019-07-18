@@ -6,9 +6,8 @@ metadata:
     app: wishlist-service
 spec:
   ports:
-  - name: "9001"
-    port: 9001
+  - port: 9001
     targetPort: 9001
-#  type: NodePort
+  type: NodePort
   selector:
     app: wishlist-service

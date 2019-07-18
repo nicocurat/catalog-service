@@ -10,6 +10,7 @@ spec:
     port: 8081
     targetPort: 8081
   selector:
-    app: user-service
+    app: catalog-service
+  type: NodePort
 status:
   loadBalancer: {}

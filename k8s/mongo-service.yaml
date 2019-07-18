@@ -9,5 +9,6 @@ spec:
     targetPort: 27017
   selector:
     app: mongo
+  type: NodePort
 status:
   loadBalancer: {}
