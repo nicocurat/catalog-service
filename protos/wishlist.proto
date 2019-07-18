@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "product.proto";
+import "status.proto";
+
+service WishList {
+    rpc AddItem (ItemRequest) returns (ItemResponse) {}
+    rpc DeleteItem(ItemRequest) returns (ItemResponse) {}
+    rpc GetWishList (UserId) returns (ProductIds) {}
+    rpc GetWishListWithDescription (UserId) returns (ProductsList) {}
+
+}
+
+message ItemRequest {
+    int32 product = 1;
+    int32 user = 2;
+}
+
+
+
+message UserId {
+    int32 id = 1;
+}
+
+message ItemResponse {
+    Status status = 1;
+}

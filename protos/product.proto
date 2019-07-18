@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "status.proto";
+
+message Product {
+    int32 id = 1;
+    string name = 2;
+    string description = 3;
+    double price = 4;
+}
+
+
+
+
+
+
+service Products{
+    rpc GetProduct (ProductIdRequest) returns (ProductResponse) {}
+    rpc GetAllProducts (GetAllRequest) returns (ProductsList) {}
+    rpc GetProducts (ProductIds) returns (ProductsList) {}
+    rpc AddProduct(Product) returns (AddProductResponse) {}
+}
+
+//allows for Option[Product]
+message ProductResponse {
+    Product product = 1;
+}
+
+
+message GetAllRequest {}
+
+message ProductsList {
+    repeated Product products = 1;
+}
+
+message ProductIdRequest {
+    int32 productId = 1;
+}
+
+message ProductIds {
+    repeated int32 productIds = 1;
+}
+
+
+message AddProductResponse {
+    Status status  = 1;
+}

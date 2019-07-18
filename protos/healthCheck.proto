@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+service HealthCheck {
+    rpc GetPing(Ping) returns (Pong) {}
+}
+
+message Ping {}
+message Pong{
+    int64 timestamp = 1;
+}
