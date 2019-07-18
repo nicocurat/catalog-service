@@ -5,6 +5,8 @@
 
 dist/*
 target/
+node_modules/
+/node_modules/
 lib_managed/
 src_managed/
 project/boot/
