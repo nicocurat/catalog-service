@@ -6,14 +6,14 @@ import product.{ProductIds, ProductsGrpc, ProductsList}
 import status.Status.{FAILED, OK}
 import wishlist.WishListGrpc.WishList
 import wishlist.{ItemRequest, ItemResponse, UserId}
-
+import utils.EnvironmentProvider
 import scala.concurrent.Future
 
 
 object WishListService extends ControllerExecutionContext with WishList{
 
   //channel to send the gRPC Request
-  private lazy val channel = ManagedChannelBuilder.forAddress("localhost", 8081).usePlaintext().build()
+  private lazy val channel = ManagedChannelBuilder.forAddress(EnvironmentProvider.productServiceHost, EnvironmentProvider.productServicePort.toInt).usePlaintext().build()
 
   private val stub: ProductsGrpc.ProductsStub = ProductsGrpc.stub(channel)
 

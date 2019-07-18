@@ -5,6 +5,12 @@ version := "0.1"
 
 scalaVersion := "2.12.8"
 
+enablePlugins(JavaAppPackaging)
+enablePlugins(DockerPlugin)
+
+dockerBaseImage := "openjdk:jre-alpine"
+enablePlugins(AshScriptPlugin)
+dockerExposedPorts in Docker := Seq(8081)
 
 libraryDependencies ++= Seq(
   "io.grpc" % "grpc-netty" % scalapb.compiler.Version.grpcJavaVersion,
