@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+data:
+  database: mongodb
+  database_uri: mongodb://mongo:27017

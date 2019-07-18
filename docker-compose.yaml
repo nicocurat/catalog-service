@@ -16,17 +16,17 @@ services:
     depends_on:
       - mongo
     ports:
-      - 8081:8081
+      - 9001:9001
 
-  user_service:
-    image: user-service_catalog_service:latest
+  catalog_service:
+    image: catalog-service_catalog_service:latest
     build:
-      context: user-service
+      context: catalog-service
       dockerfile: Dockerfile
     depends_on:
       - mongo
     ports:
-      - 9001:9001
+      - 8081:8081
 
 volumes:
   mongodb:

@@ -1,6 +1,5 @@
 package database
 
-import com.mongodb.{MongoClientSettings, MongoDriverInformation}
 import org.mongodb.scala.{Document, MongoClient, MongoCollection, MongoDatabase}
 
 import scala.concurrent.ExecutionContext

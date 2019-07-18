@@ -11,7 +11,6 @@ RUN \
   rm sbt-$SBT_VERSION.deb && \
   apt-get update && \
   apt-get install sbt && \
-  apt-get install libatomic1 && \
   sbt sbtVersion
 
 # Define working directory

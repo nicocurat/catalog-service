@@ -7,7 +7,7 @@ import services.{HealthCheckService, ProductService}
 
 import scala.concurrent.ExecutionContext
 
-object ProductServer {
+object CatalogServer {
 
   def main(args: Array[String]): Unit = {
     val ssd = ProductsGrpc.bindService(ProductService, ExecutionContext.global)
